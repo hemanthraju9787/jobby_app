@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './index.css';
 
 
@@ -6,6 +7,7 @@ const {JobsData}= props;
 const {company_logo_url,employment_type,id,job_description,location,package_per_annum,rating,title,}= JobsData;
 
 return (
+  <Link to={`/jobs/${id}`} className="job-card-link">
     <div className="job-card-container">
     <li className="job-card">
       <div className="job-card-header">
@@ -36,6 +38,7 @@ return (
       
     </li>
     </div>
+    </Link>
   );
 
 

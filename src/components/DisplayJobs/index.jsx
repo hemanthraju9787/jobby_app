@@ -7,7 +7,13 @@ import JobsCard from '../JobsCard';
 const Displayjobs = () => {
     const [JobsList, setJobsList] = useState([])
   const [isLoading, setIsLoading] = useState(true)
+const [searchJob,setSearchJob]=useState('')
 
+
+  const onChangejobs = event => {
+setSearchJob(event.target.value)
+  }
+  
   useEffect(() => {
     const getJobs = async () => {
       const apiUrl = 'https://apis.ccbp.in/jobs'
@@ -40,7 +46,9 @@ const Displayjobs = () => {
 const renderJobsList = () => {
     return (
       <div>
-        
+        <div>
+        <input className='jobs-input-element' type='search' onChange={onChangejobs} value={searchJob}/>
+      </div>
         <ul className="products-list">
           {JobsList.map(job => (
             <JobsCard JobsData={job} key={job.id} />

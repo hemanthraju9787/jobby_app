@@ -1,0 +1,164 @@
+.job-details-container {
+  max-width: 700px;
+  margin-left: 30%;
+  padding: 32px 24px;
+  padding-top:20px;
+  
+  background: #222;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.jobid-header{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.job-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.job-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.job-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffd700;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.star-icon {
+  color: #ffd700;
+}
+
+.job-info-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 18px 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.job-info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #bbb;
+}
+
+.job-info-icon {
+  font-size: 1.1em;
+}
+
+.job-package {
+  margin-left: auto;
+  color: #fff;
+  font-weight: 600;
+}
+
+.job-desc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-website-link {
+  color: #6c63ff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.job-description {
+  margin: 12px 0 24px 0;
+  color: #e0e0e0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 18px 0 28px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  gap: 8px;
+}
+
+.skill-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.life-title {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.life-at-company {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.life-desc {
+  flex: 1;
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.life-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7032a5;
+  margin-top: 40px;
+}

@@ -1,8 +1,10 @@
 
 .job-card{
-    background-color: gray;
+    background-color: #282c34;
     padding:20px;
     margin: 10px;
+    margin-left: 7%;
+    border-radius: 25px;
 }
 .company-logo-container{
     display: flex;
@@ -47,4 +49,9 @@
 }
 .job-card-container{
     background-color:black;
+    width: 100%;
+}
+.job-card-link{
+    text-decoration: none;
+    color: inherit;
 }
